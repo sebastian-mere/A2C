@@ -147,7 +147,7 @@ nav.open .menu {
     padding-top: 5em;
 }
 
-.intro::after, .introRob::after {
+.intro::after {
     content: "";
     position: absolute;
     height: 135px;
@@ -168,7 +168,6 @@ nav.open .menu {
 
 .carrousel {
     width: 100%;
-    max-width: 120em;
     padding: 2em;
     transition: all 0.4s ease;
     overflow: hidden;
@@ -264,8 +263,12 @@ nav.open .menu {
 }
 
 .introRob::after {
-    background: url(../assets/img/curva2.svg);
+    content: "";
+    position: absolute;
     height: 155px;
+    background: url(../assets/img/curva2.svg);
+    left: 0;
+    right: 0;
     background-size: 100% auto;
     background-repeat: no-repeat;
     margin-top: -1px;

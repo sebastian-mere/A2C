@@ -1,0 +1,248 @@
+@font-face {
+    font-family: 'Avenir';
+    src: url('../assets/fonts/AvenirLTStd-Black.otf');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Avenir';
+    src: url('../assets/fonts/AvenirLTStd-Book.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Avenir', sans-serif;
+}
+
+p {
+    color: #787878;
+    font-size: 1.2em;
+    font-weight: 400;
+    line-height: 1.4em;
+    padding: 2em;
+    text-align: center;
+}
+
+a {
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0 1rem;
+}
+
+nav {
+    background: rgb(244, 147, 55);
+    background: linear-gradient(90deg, rgba(244, 147, 55, 1) 0%, rgba(204, 46, 120, 1) 100%);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+
+.logo img {
+    height: 21px;
+}
+
+.menu {
+    display: none;
+    padding: 0 1em 1em 1em;
+    text-align: center;
+}
+
+nav.open .menu {
+    display: block;
+}
+
+.hamburger-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    padding: 1em;
+    cursor: pointer;
+    color: white;
+    font-size: 1.5em;
+}
+
+@media (max-width: 767px) {
+    .hamburger-menu {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+@media (min-width: 768px) {
+    .menu {
+        display: block;
+    }
+}
+
+.heroBanner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 70vh;
+    color: white;
+    background-color: grey;
+}
+
+.heroBanner h1 {
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0 2em 2em 2em;
+}
+
+.heroBanner h1 b {
+    font-weight: bold;
+}
+
+.heroBanner a {
+    padding: 1em 2.5em;
+    border-radius: 2em;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #CC2E78;
+}
+
+.call {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1em;
+    background-color: #F49337;
+    text-align: center;
+    padding: 1em;
+}
+
+.call p {
+    color: white;
+    font-weight: 600;
+    padding: 0;
+    padding-bottom: 0.5em;
+}
+
+.call a {
+    padding: 0.5em 1em;
+    border-radius: 2em;
+    font-size: 12px;
+    font-weight: 800;
+    text-transform: uppercase;
+    background-color: #CC2E78;
+}
+
+.intro{
+    padding-top: 5em;
+}
+
+.intro::after {
+    content: "";
+    position: absolute;
+    height: 135px;
+    background: url(../assets/img/curva.svg);
+    left: 0;
+    right: 0;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    margin-top: -1px;
+}
+
+.intro h2{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+.carrousel {
+    width: 100%;
+    max-width: 120em;
+    padding: 2em;
+    transition: all 0.4s ease;
+    overflow: hidden;
+    color: white;
+    background: rgb(244,147,55);
+    background: linear-gradient(180deg, rgba(244,147,55,1) 0%, rgba(204,46,120,1) 100%);
+  }
+  
+  .carrousel .grande {
+    width: 300%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.4s ease;
+    padding: 1em;
+    text-align: center;
+    transition: all 0.5s ease;
+    transform: translateX(0%);
+  }
+  
+  .carrousel .chico {
+    width: calc( 100% / 3 - 2em);
+    min-height: 10vh;
+    transition: all 0.4s ease;
+ 
+  }
+  
+  .carrousel .puntos {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .carrousel .punto {
+    padding: 0 0.1em;
+    transition: all 0.4s ease;
+    font-size: 2em;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  
+  .carrousel .punto.activo {
+    color: white;
+  }
+
+  .carrousel p{
+    color: white;
+  }
+
+  .introRpa{
+    padding-top: 5em;
+}
+
+.introRpa h2{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+.video{
+    text-align: center;
+}
+
+.bullets{
+    padding: 2em;
+    color: #787878;
+}
+
+.bullS{
+    display: list-item;
+    list-style-image: url("../assets/img/check.svg");
+}
+
+.bullS li::marker{
+    background-size: 1em;
+    background-repeat: no-repeat;
+    padding-left: 1em;
+}

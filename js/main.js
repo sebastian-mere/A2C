@@ -8,14 +8,29 @@ hamburgerMenu.addEventListener("click", function () {
 const grande    = document.querySelector('.grande')
 const punto     = document.querySelectorAll('.punto')
 
-punto.forEach( ( cadaPunto , i )=> {
+punto.forEach( ( Punto , i )=> {
     punto[i].addEventListener('click',()=>{
         let posicion  = i
         let operacion = posicion * -33.334
         grande.style.transform = `translateX(${ operacion }%)`
-        punto.forEach( ( cadaPunto , i )=>{
+        punto.forEach( ( Punto , i )=>{
             punto[i].classList.remove('activo')
         })
         punto[i].classList.add('activo')
+    })
+});
+
+const grandeRob = document.querySelector('.grandeRob')
+const puntoRob = document.querySelectorAll('.puntoRob')
+
+puntoRob.forEach( ( Punto2 , i )=> {
+    puntoRob[i].addEventListener('click',()=>{
+        let posicion  = i
+        let operacion = posicion * -33.334
+        grandeRob.style.transform = `translateX(${ operacion }%)`
+        puntoRob.forEach( ( Punto2 , i )=>{
+            puntoRob[i].classList.remove('activo')
+        })
+        puntoRob[i].classList.add('activo')
     })
 })

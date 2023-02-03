@@ -27,6 +27,10 @@ p {
     text-align: center;
 }
 
+li {
+    font-size: 1.2em;
+}
+
 a {
     color: white;
     font-weight: 600;
@@ -139,11 +143,11 @@ nav.open .menu {
     background-color: #CC2E78;
 }
 
-.intro{
+.intro, .introRob{
     padding-top: 5em;
 }
 
-.intro::after {
+.intro::after, .introRob::after {
     content: "";
     position: absolute;
     height: 135px;
@@ -155,7 +159,7 @@ nav.open .menu {
     margin-top: -1px;
 }
 
-.intro h2{
+.intro h2, .introRob h2{
     text-align: center;
     font-weight: bolder;
     font-size: 32px;
@@ -173,7 +177,7 @@ nav.open .menu {
     background: linear-gradient(180deg, rgba(244,147,55,1) 0%, rgba(204,46,120,1) 100%);
   }
   
-  .carrousel .grande {
+  .carrousel .grande, .carrousel .grandeRob {
     width: 300%;
     display: flex;
     flex-flow: row nowrap;
@@ -186,14 +190,14 @@ nav.open .menu {
     transform: translateX(0%);
   }
   
-  .carrousel .chico {
+  .carrousel .chico, .carrousel .chicoRob {
     width: calc( 100% / 3 - 2em);
     min-height: 10vh;
     transition: all 0.4s ease;
  
   }
   
-  .carrousel .puntos {
+  .carrousel .puntos, .carrousel .puntosRob {
     width: 100%;
     display: flex;
     flex-flow: row nowrap;
@@ -201,16 +205,25 @@ nav.open .menu {
     align-items: center;
   }
   
-  .carrousel .punto {
+  .carrousel .punto, .carrousel .puntoRob {
     padding: 0 0.1em;
     transition: all 0.4s ease;
     font-size: 2em;
     color: rgba(255, 255, 255, 0.5);
   }
   
-  .carrousel .punto.activo {
+  .carrousel .punto.activo, .carrousel .puntoRob.activo  {
     color: white;
   }
+
+
+  .carrousel h2{
+    margin-top: 70px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 32px;
+    text-transform: uppercase;
+}
 
   .carrousel p{
     color: white;
@@ -233,6 +246,7 @@ nav.open .menu {
 
 .bullets{
     padding: 2em;
+    margin-left: 1em;
     color: #787878;
 }
 
@@ -241,8 +255,31 @@ nav.open .menu {
     list-style-image: url("../assets/img/check.svg");
 }
 
-.bullS li::marker{
-    background-size: 1em;
-    background-repeat: no-repeat;
-    padding-left: 1em;
+.bullS li{
+    padding: 0.25em;
 }
+
+.bullS li::marker{
+    font-size: 1.5em;
+}
+
+.introRob::after {
+    background: url(../assets/img/curva2.svg);
+    height: 155px;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    margin-top: -1px;
+}
+
+  .carrousel .chicoRob {
+    width: calc( 100% / 3 - 2em);
+    min-height: 10vh;
+    transition: all 0.4s ease;
+ 
+  }
+
+  .carrousel .puntosRob {
+    position: relative;
+    top: -110px;
+  }
+

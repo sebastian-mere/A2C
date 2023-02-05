@@ -18,6 +18,19 @@
     font-family: 'Avenir', sans-serif;
 }
 
+h2{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+h3{
+    font-size: 20px;
+    font-weight: 800;
+    text-align: center;
+}
+
 p {
     color: #787878;
     font-size: 1.2em;
@@ -159,13 +172,6 @@ nav.open .menu {
     margin-top: -1px;
 }
 
-.intro h2, .introRob h2{
-    text-align: center;
-    font-weight: bolder;
-    font-size: 32px;
-    text-transform: uppercase;
-}
-
 .carrousel {
     width: 100%;
     padding: 2em;
@@ -218,10 +224,6 @@ nav.open .menu {
 
   .carrousel h2{
     margin-top: 70px;
-    text-align: center;
-    font-weight: bolder;
-    font-size: 32px;
-    text-transform: uppercase;
 }
 
   .carrousel p{
@@ -230,13 +232,6 @@ nav.open .menu {
 
   .introRpa{
     padding-top: 5em;
-}
-
-.introRpa h2{
-    text-align: center;
-    font-weight: bolder;
-    font-size: 32px;
-    text-transform: uppercase;
 }
 
 .video{
@@ -286,3 +281,108 @@ nav.open .menu {
     top: -110px;
   }
 
+.sliderContainer{
+    margin: 0 auto;
+    padding: 2em 0 2em;
+    width: 100%;
+}
+.logoSlider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.logoSlider .item{
+    padding: 1em;
+}
+
+.logoSlider img{
+    width: 100%;
+}
+
+.exito{
+    padding-top: 5em;
+    color: white;
+    background: #F49337;
+}
+
+.exito .video{
+    padding: 2em;
+}
+
+.exito .logosExito{
+    padding: 2em 2em 4em 2em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+
+.final{
+    background: #CC2E78;
+}
+
+.final a{
+    background: #F49337;
+}
+
+footer{
+    background: #454343;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+}
+
+.footer{
+    display: grid;
+    grid-template-areas: "logo linea links"
+                         "logo linea sm";
+    gap: 1em;
+}
+
+.footer .logoFooter{
+    grid-area: logo;
+    align-self: center;
+} 
+
+.footer span{
+    font-size: 3em;
+    border: 1px solid white;
+    grid-area: linea;
+}
+
+.footer ul{
+    list-style: none;
+}
+
+.footer .links{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: links;
+}
+
+.footer .links li a{
+    font-size: 12px;
+    font-weight: lighter;
+    text-transform: uppercase;
+    padding: 0 2em 0 0;
+}
+
+.footer .sm{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    grid-area: sm;
+}
+
+.footer .sm li{
+    color: white;
+    font-size: 1.5em;
+    padding-right: 0.5em;
+}

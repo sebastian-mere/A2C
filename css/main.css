@@ -129,6 +129,27 @@ nav.open .menu {
     background-color: #CC2E78;
 }
 
+.heroChatbot {
+    background: url(../assets/img/chatbot.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.heroChatbot h1{
+    text-transform: uppercase;
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 0;
+    text-shadow: 0px 4px 10px #454343;
+}
+
+.heroChatbot p{
+    color: white;
+    font-size: 24px;
+    padding: 1em 0 5em;
+    text-shadow: 0px 5px 15px #454343;
+}
+
 .call {
     display: flex;
     flex-direction: column;
@@ -245,7 +266,6 @@ nav.open .menu {
 }
 
 .bullS{
-    display: list-item;
     list-style-image: url("../assets/img/check.svg");
 }
 
@@ -385,4 +405,189 @@ footer{
     color: white;
     font-size: 1.5em;
     padding-right: 0.5em;
+}
+
+.introChatbot{
+    padding: 5em 2em 0 2em;
+}
+
+.introChatbot h2{
+    color: #C72E78;
+    font-size: 1.2em;
+}
+
+.atencion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    width: 100%;
+    background: rgb(244,147,55);
+    background: linear-gradient(-90deg, rgba(244,147,55,1) 0%, rgba(204,46,120,1) 100%);
+}
+
+.atencion p{
+    color: white;
+    padding: 0 0 0 1em;
+    text-align: start;
+}
+
+.fondoGris{
+    background: #F4F7FA;
+}
+
+.chatbot{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.chatbot img{
+    position: relative;
+    top: 100px;
+    text-align: center;
+    width: 60%;
+    z-index: 1;
+}
+
+.chatbot .bullets{
+    background: #FFFFFF;
+    border-radius: 27px;
+    margin: 1em;
+    padding: 6em 2em 2em 4em;
+}
+
+.chatbot .bullets .bullS li{
+    padding: 0;
+    padding-left: 0.25em;
+}
+
+.chatbot .bullets .bullS li p{
+    position: relative;
+    top: -1em;
+    font-size: 18px;
+    font-weight: 800;
+    text-align: left;
+    padding: 0;
+    
+}
+
+.chatbot .bullets .bullS li::marker{
+    font-size: 3em;
+}
+
+.skills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    padding-top: 2em;
+}
+
+.skills img{
+    width: 40%;
+}
+
+.skills h2{
+    color: #58456A;
+    padding: 1em;
+}
+
+.skills a{
+    padding: 1em 2.5em;
+    margin: 2em;
+    border-radius: 2em;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: #4F3C5F;
+}
+
+.cardSkill{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-flow: column wrap;
+    padding: 1em;
+    margin: 0.5em 1em;
+    border: 1px solid #6B3976;
+    border-radius: 18px;
+    width: 90%;
+}
+
+.cardSkill img{
+    width: 20%;
+}
+
+.cardSkill h3{
+    color:#58456A;
+    padding-left: 1em;
+    text-align: left;
+    width: min-content;
+}
+
+.cardSkill p{
+    padding: 1em;
+    font-size: 1em;
+}
+
+.nameSkill{
+    padding: 1.5em 0 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modulos{
+    background-image: url(../assets/img/bg-modulos.svg);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 18px;
+    margin: 1em;
+    padding: 1em;
+}
+
+.modulos h2{
+    color: white;
+    padding: 0.5em;
+}
+
+.iconosModulos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.iconosModulos img{
+    width: 30%;
+}
+
+.conocer{
+    padding: 3em 2em;
+}
+
+.conocer h3{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.conocer a {
+    display: inline-block;
+    color: #454343;
+    border: 1px solid #C72E78;
+    border-radius: 25px;
+    padding: 0.5em;
+    margin: 0.5em;
+    text-align: center;
+    font-size: 16px;
+    color: #454343;
+}
+
+.conocerBotones{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    margin: 2em;
 }

@@ -140,14 +140,12 @@ nav.open .menu {
     font-size: 32px;
     font-weight: 800;
     margin-bottom: 0;
-    text-shadow: 0px 4px 10px #454343;
 }
 
 .heroChatbot p{
     color: white;
     font-size: 24px;
     padding: 1em 0 5em;
-    text-shadow: 0px 5px 15px #454343;
 }
 
 .call {
@@ -328,7 +326,7 @@ nav.open .menu {
 }
 
 .exito .video{
-    padding: 2em;
+    padding: 2em 0;
 }
 
 .exito .logosExito{
@@ -408,7 +406,7 @@ footer{
 }
 
 .introChatbot{
-    padding: 5em 2em 0 2em;
+    padding: 5em 2em 1em 2em;
 }
 
 .introChatbot h2{
@@ -445,7 +443,7 @@ footer{
 
 .chatbot img{
     position: relative;
-    top: 100px;
+    top: 80px;
     text-align: center;
     width: 60%;
     z-index: 1;

@@ -26,3 +26,19 @@ $(".logoSlider").slick({
         },
       ]
   });
+
+
+  $(".carrouselRobots").slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    adaptiveHeight: false,
+    variableWidth: false,
+    autoplay: true,
+    arrows: true,
+    dots: true,
+    autoplaySpeed: 10000,
+    mobileFirst: false,
+    infinite: true,
+  });
+
+  

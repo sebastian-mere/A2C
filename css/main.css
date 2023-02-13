@@ -91,19 +91,6 @@ nav.open .menu {
     font-size: 1.5em;
 }
 
-@media (max-width: 767px) {
-    .hamburger-menu {
-        display: block;
-        cursor: pointer;
-    }
-}
-
-@media (min-width: 768px) {
-    .menu {
-        display: block;
-    }
-}
-
 .heroBanner {
     display: flex;
     justify-content: center;
@@ -189,19 +176,8 @@ nav.open .menu {
     padding-top: 5em;
 }
 
-.intro::after {
-    content: "";
-    position: absolute;
-    height: 135px;
-    background: url(../assets/img/curva.svg);
-    left: 0;
-    right: 0;
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    margin-top: -1px;
-}
-
 .carrousel {
+    position: relative;
     width: 100%;
     padding: 2em;
     transition: all 0.4s ease;
@@ -210,6 +186,32 @@ nav.open .menu {
     background: rgb(244,147,55);
     background: linear-gradient(180deg, rgba(244,147,55,1) 0%, rgba(204,46,120,1) 100%);
   }
+
+  .homeChat .carrousel::before {
+    content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 50%;
+  background: url(../assets/img/curva.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+  .homeRob .carrousel::before {
+    content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 50%;
+  background: url(../assets/img/curva2.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
   
   .carrousel .grande, .carrousel .grandeRob {
     width: 300%;
@@ -267,10 +269,20 @@ nav.open .menu {
     text-align: center;
 }
 
+.video img{
+    width: 90%;
+}
+
+.centrado{
+    display: flex;
+    justify-content: center;
+}
+
 .bullets{
     padding: 2em;
     margin-left: 1em;
     color: #787878;
+    width: 100%;
 }
 
 .bullS{
@@ -448,6 +460,7 @@ footer{
     color: white;
     padding: 0 0 0 1em;
     text-align: start;
+    width: 100%;
 }
 
 .fondoGris{
@@ -470,10 +483,14 @@ footer{
 }
 
 .chatbot .bullets{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: #FFFFFF;
     border-radius: 27px;
-    margin: 1em;
+    margin: 0;
     padding: 6em 2em 2em 4em;
+    width: 90%;
 }
 
 .chatbot .bullets .bullS li{
@@ -483,7 +500,7 @@ footer{
 
 .chatbot .bullets .bullS li p{
     position: relative;
-    top: -1em;
+    top: -0.4em;
     font-size: 18px;
     font-weight: 800;
     text-align: left;
@@ -496,11 +513,9 @@ footer{
 }
 
 .skills{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column wrap;
+    text-align: center;
     padding-top: 2em;
+    padding-bottom: 2em;
 }
 
 .skills img{
@@ -522,16 +537,22 @@ footer{
     background: #4F3C5F;
 }
 
+.cards{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1em;
+    padding: 2em;
+    padding-bottom: 3em;
+}
+
 .cardSkill{
     display: flex;
     justify-content: center;
     text-align: center;
     flex-flow: column wrap;
     padding: 1em;
-    margin: 0.5em 1em;
     border: 1px solid #6B3976;
     border-radius: 18px;
-    width: 90%;
 }
 
 .cardSkill img{
@@ -561,7 +582,7 @@ footer{
     background-image: url(../assets/img/bg-modulos.svg);
     background-size: cover;
     background-position: center center;
-    border-radius: 18px;
+    border-radius: 29px;
     margin: 1em;
     padding: 1em;
 }
@@ -903,8 +924,9 @@ footer{
   right: 0;
   bottom: 50%;
   background: url(../assets/img/curva.svg);
-  background-size: cover;
-  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top center;
 }
 
 .introAbout::after {
@@ -915,8 +937,9 @@ footer{
   right: 0;
   bottom: 0;
     background: url(../assets/img/curva3.svg);
-    background-size: cover;
-    background-position: center;
+    background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom center;
 }
 
 .como{
@@ -1020,3 +1043,70 @@ color: #454343;
 .equipo .humano{
     width: 50%;
 }
+
+
+@media (min-width: 576px) {
+
+    p{
+        padding-left: 4em;
+        padding-right: 4em;
+    }
+
+    .video img{
+        width: 70%;
+    }
+
+    .bullets{
+        width: 80%;
+    }
+
+    .logosExito{
+        padding: 2em 3em 4em 3em;
+    }
+
+    .introPages{
+        padding: 3em 4em;
+    }
+
+    .atencion{
+        padding: 2em 5em;
+    }
+
+    .chatbot img{
+
+        width: 40%;
+
+    }
+
+    .chatbot .bullets {
+        width: 80%;
+    }
+
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        gap: 1em;
+        padding: 2em;
+        padding-bottom: 3em;
+    }
+    
+    .modulos {
+        width: 90%;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .hamburger-menu {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+@media (min-width: 768px) {
+    .menu {
+        display: block;
+    }
+}
+

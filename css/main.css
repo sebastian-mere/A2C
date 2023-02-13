@@ -772,7 +772,7 @@ footer{
 
 .robots img{
     padding-top: 2.5rem;
-    width: 25%;
+    width: 150px;
 }
 
 .robots p{
@@ -815,7 +815,6 @@ footer{
     background: url(../assets/img/ojo-verde.svg);
     left: 0;
     right: 0;
-    background-size: 40% auto;
     background-position: center center;
     background-repeat: no-repeat;
     margin-top: -80px;
@@ -1091,6 +1090,18 @@ color: #454343;
 
     .conocer a {
         width: 70%;
+    }
+
+    .robotVideo {
+        margin: 8em 2em 0 2em;
+    }
+
+    .itemRobot {
+        padding: 1em 3em;
+    }
+
+    .rpaVideo {
+        margin: 1em 3em;
     }
 }
 

@@ -251,8 +251,7 @@ video {
   right: 0;
   bottom: 50%;
   background: url(../assets/img/curva2.svg);
-  background-size: 100%;
-  background-repeat: no-repeat;
+  background-repeat: repeat-x;
   background-position: top center;
 }
 
@@ -1097,9 +1096,6 @@ footer {
     width: 40%;
   }
 
-  .chatbot .bullets {
-    width: 80%;
-  }
 
   .cards {
     padding: 1em;
@@ -1242,6 +1238,7 @@ p {
     .conocer a {
         width: 50%;
     }
+
 }
 
 @media (min-width: 992px) {
@@ -1258,7 +1255,23 @@ p {
     .conocer a {
         width: 30%;
     }
+
+    .chatbot img {
+        width: 35%;
+
+    }
+
+
 }
 
 @media (min-width: 1200px) {
+    .chatbot .bullets {
+        width: 70%;
+    }
+
+    .chatbot img {
+        width: 25%;
+
+    }
+
 }

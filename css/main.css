@@ -159,10 +159,10 @@ nav.open .menu {
 }
 
 .heroRobotics {
-    background: url(../assets/img/robotics.jpeg);
-    background-size: cover;
-    background-position: center center;
-  }
+  background: url(../assets/img/robotics.jpeg);
+  background-size: cover;
+  background-position: center center;
+}
 
 .call {
   display: flex;
@@ -196,96 +196,15 @@ nav.open .menu {
   padding-top: 5em;
 }
 
-.carrousel {
-  position: relative;
+.robotsHome {
   width: 100%;
   padding: 2em;
-  transition: all 0.4s ease;
-  overflow: hidden;
-  color: white;
   background: rgb(244, 147, 55);
   background: linear-gradient(
     180deg,
     rgba(244, 147, 55, 1) 0%,
     rgba(204, 46, 120, 1) 100%
   );
-}
-
-.homeChat .carrousel::before {
-  content: "";
-  position: absolute;
-  top: -1px;
-  left: 0;
-  right: 0;
-  bottom: 50%;
-  background: url(../assets/img/curva.svg);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: top center;
-}
-
-.homeRob .carrousel::before {
-  content: "";
-  position: absolute;
-  top: -1px;
-  left: 0;
-  right: 0;
-  bottom: 50%;
-  background: url(../assets/img/curva2.svg);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: top center;
-}
-
-.carrousel .grande,
-.carrousel .grandeRob {
-  width: 300%;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: center;
-  transition: all 0.4s ease;
-  padding: 1em;
-  text-align: center;
-  transition: all 0.5s ease;
-  transform: translateX(0%);
-}
-
-.carrousel .chico,
-.carrousel .chicoRob {
-  width: calc(100% / 3 - 2em);
-  min-height: 10vh;
-  transition: all 0.4s ease;
-}
-
-.carrousel .puntos,
-.carrousel .puntosRob {
-  width: 100%;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.carrousel .punto,
-.carrousel .puntoRob {
-  padding: 0 0.1em;
-  transition: all 0.4s ease;
-  font-size: 2em;
-  color: rgba(255, 255, 255, 0.5);
-}
-
-.carrousel .punto.activo,
-.carrousel .puntoRob.activo {
-  color: white;
-}
-
-.carrousel h2 {
-  margin-top: 70px;
-}
-
-.carrousel p {
-  color: white;
 }
 
 .introRpa {
@@ -324,6 +243,54 @@ video {
   font-size: 1.5em;
 }
 
+.homeRob .robotsHome::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: 0;
+  right: 0;
+  bottom: 50%;
+  background: url(../assets/img/curva2.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.robotsHome img {
+  padding-bottom: 4em;
+}
+
+.robotsHome h2 {
+  color: white;
+}
+
+.robotsHome .slick-dots {
+  bottom: 95px;
+  left: 0;
+  right: 0;
+  width: inherit;
+}
+
+.robotsHome .slick-dots li.slick-active button:before {
+  opacity: 0.75;
+  color: #fff;
+}
+
+.robotsHome .slick-dots li button:before {
+  color: #fff;
+}
+
+.homeRob .slick-dotted.slick-slider {
+  margin-bottom: 0px;
+}
+
+.robotHome {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .introRob::after {
   content: "";
   position: absolute;
@@ -334,17 +301,6 @@ video {
   background-size: 100% auto;
   background-repeat: no-repeat;
   margin-top: -1px;
-}
-
-.carrousel .chicoRob {
-  width: calc(100% / 3 - 2em);
-  min-height: 10vh;
-  transition: all 0.4s ease;
-}
-
-.carrousel .puntosRob {
-  position: relative;
-  top: -110px;
 }
 
 .sliderContainer {
@@ -944,10 +900,7 @@ footer {
 .heroAbout {
   background: rgb(244, 147, 55);
   background: url(../assets/img/bg-about.svg),
-    linear-gradient(
-        90deg,
-        rgba(244, 147, 55, 1) 0%,
-        rgba(204, 46, 120, 1) 100%);
+    linear-gradient(90deg, rgba(244, 147, 55, 1) 0%, rgba(204, 46, 120, 1) 100%);
   background-size: cover;
   background-position: top;
 }
@@ -1030,9 +983,9 @@ footer {
   margin-top: 20px;
 }
 
-.rounded video{
-    border-radius: 27px;
-    overflow: hidden;
+.rounded video {
+  border-radius: 27px;
+  overflow: hidden;
 }
 
 .team {
@@ -1119,7 +1072,13 @@ footer {
   }
 
   .exito video {
-    width: 50%;
+    height: 30%;
+    width: auto;
+  }
+
+  .exitoHome video {
+    height:auto;
+    width: auto;
   }
 
   .logosExito {
@@ -1167,7 +1126,7 @@ footer {
     margin: 1em 3em;
   }
 
-  .robotVideo .video video{
+  .robotVideo .video video {
     width: 100%;
   }
 
@@ -1201,4 +1160,105 @@ footer {
   .menu {
     display: block;
   }
+
+  .heroAbout {
+    background: rgb(244, 147, 55);
+    background: url(../assets/img/curva4.svg),
+      linear-gradient(90deg, rgba(244, 147, 55, 1) 0%, rgba(204, 46, 120, 1) 100%);
+    background-size: cover;
+    background-position: top;
+  }
+
+  .como {
+    padding: 2em 20%;
+}
+
+.como img {
+    width: 10%;
+}
+
+.team {
+    text-align: center;
+    padding: 2em 15%;
+}
+
+p {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.bullets {
+    padding: 2em 10%;
+}
+
+  .chatbot {
+    padding: 0 20%;
+}
+
+.modulos {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+  .rpaVideo {
+    margin: 1em 20%;
+}
+
+  .sectoresLogo {
+    margin: 1em 20%;
+}
+
+  .sectoresLogo div {
+    width: calc(30% - 10px);
+}
+
+  .introPages {
+    padding: 3em 20%;
+    }
+
+    .itemRobot {
+        padding: 1em 20%;
+    }
+
+    .robotVideo {
+        margin: 8em 20% 0 20%;
+    }
+
+    .slick-next {
+        right: 20%;
+    }
+
+    .slick-prev {
+        left: 20%;
+    }
+
+    .call {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: first baseline;
+    }
+
+    .conocer a {
+        width: 50%;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .cards {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    .rpaLogo img {
+        width: 20%;
+    }
+
+    .conocer a {
+        width: 30%;
+    }
+}
+
+@media (min-width: 1200px) {
 }

@@ -47,6 +47,19 @@ $(".carrouselVideos").slick({
   autoplay: false,
   arrows: false,
   dots: true,
-  mobileFirst: false,
+  mobileFirst: true,
+  infinite: true,
+});
+
+$(".robotsHome").slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  adaptiveHeight: false,
+  variableWidth: false,
+  autoplay: true,
+  arrows: false,
+  dots: true,
+  autoplaySpeed: 4000,
+  mobileFirst: true,
   infinite: true,
 });

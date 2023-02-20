@@ -115,7 +115,7 @@ nav.open .menu {
 .heroBanner h1 {
   font-size: 24px;
   font-weight: 400;
-  margin: 0 2em 2em 2em;
+  margin: 0 2em;
   width: 70%;
 }
 
@@ -142,7 +142,7 @@ nav.open .menu {
 .heroPages p {
   color: white;
   font-size: 24px;
-  padding: 1em 0 5em;
+  padding: 1em 0;
   width: 70%;
 }
 
@@ -179,7 +179,6 @@ nav.open .menu {
   color: white;
   font-weight: 600;
   padding: 0;
-  padding-bottom: 0.5em;
 }
 
 .call a {
@@ -243,6 +242,30 @@ video {
   font-size: 1.5em;
 }
 
+.divisorChat {
+  border-width: 0;
+  margin-top: 1em;
+  height: 21px;
+  width: 100%;
+  background-color: #c92e78;
+}
+
+.divisorRpa {
+  border-width: 0;
+  margin-top: 1em;
+  height: 21px;
+  width: 100%;
+  background-color: #f49337;
+}
+
+.divisorRob {
+  border-width: 0;
+  margin-top: 1em;
+  height: 21px;
+  width: 100%;
+  background-color: #36bf01;
+}
+
 .homeRob .robotsHome::before {
   content: "";
   position: absolute;
@@ -300,6 +323,70 @@ video {
   background-size: 100% auto;
   background-repeat: no-repeat;
   margin-top: -1px;
+}
+
+.botonHome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1em;
+}
+
+.botonHome a {
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+  width: 60%;
+  border-radius: 50px;
+  padding: 1em 2em;
+}
+
+.botonHome p {
+  display: inline-block;
+  font-weight: 800;
+  font-size: 16px;
+  padding: 0;
+}
+
+.botonHome i {
+  justify-self: center;
+  align-self: center;
+  font-size: 1.5em;
+}
+
+.botonChat a {
+  border: 1px solid #c92e78;
+}
+
+.botonChat p {
+  color: #c92e78;
+}
+
+.botonChat i {
+  color: #c92e78;
+}
+
+.botonRpa a {
+  border: 1px solid #f49337;
+}
+
+.botonRpa p {
+  color: #f49337;
+}
+
+.botonRpa i {
+  color: #f49337;
+}
+
+.botonRob a {
+  border: 1px solid #73bd2d;
+}
+
+.botonRob p {
+  color: #73bd2d;
+}
+
+.botonRob i {
+  color: #73bd2d;
 }
 
 .sliderContainer {
@@ -447,10 +534,6 @@ footer {
   padding: 0 0 0 1em;
   text-align: start;
   width: 100%;
-}
-
-.fondoGris {
-  background: #f4f7fa;
 }
 
 .chatbot {
@@ -1056,6 +1139,95 @@ footer {
   width: 50%;
 }
 
+.form {
+  padding: 2em 3em;
+  background-color: #454343;
+}
+
+.form .campo {
+  padding: 0.5em;
+}
+
+.form .campo input,
+.form .campo select,
+.form .campo textarea {
+  padding: 0.5em;
+  width: 100%;
+  font-size: 16px;
+  border-radius: 25px;
+  border: 0;
+}
+
+.warning {
+  padding: 0.5em 1em 0;
+  font-size: 14px;
+  color: #f49337;
+}
+
+.enviar {
+  font-size: 16px;
+  font-weight: 800;
+  color: white;
+  padding: 1em 2em;
+  width: 48%;
+  border-radius: 25px;
+  background-color: #36bf01;
+  border: 0;
+}
+
+.reset {
+  font-size: 16px;
+  font-weight: 800;
+  color: white;
+  padding: 1em 2em;
+  width: 48%;
+  border-radius: 25px;
+  background-color: #f49337;
+  border: 0;
+}
+
+.formBotones {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5em;
+}
+
+.fondoGris {
+  background: #f4f7fa;
+}
+
+.chatbot .fondoGris {
+  background: #f4f7fa;
+}
+
+#btn-subir {
+  display: none;
+  font-size: 21px;
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  border: 0;
+  background-color: #c92e78;
+  color: white;
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 @media (min-width: 576px) {
   p {
     padding-left: 4em;
@@ -1076,7 +1248,7 @@ footer {
   }
 
   .exitoHome video {
-    height:auto;
+    height: auto;
     width: auto;
   }
 
@@ -1095,7 +1267,6 @@ footer {
   .chatbot img {
     width: 40%;
   }
-
 
   .cards {
     padding: 1em;
@@ -1137,11 +1308,25 @@ footer {
   .equipo .humano {
     width: 33%;
   }
+
+  .botonHome a {
+    width: 320px;
+    padding-right: 1em;
+  }
+
+  .botonHome div {
+    text-align: center;
+  }
 }
 
 @media (min-width: 674px) {
   .cardSkill {
     width: 45%;
+  }
+
+  .form .campo,
+  .formBotones {
+    width: 550px;
   }
 }
 
@@ -1160,118 +1345,115 @@ footer {
   .heroAbout {
     background: rgb(244, 147, 55);
     background: url(../assets/img/curva4.svg),
-      linear-gradient(90deg, rgba(244, 147, 55, 1) 0%, rgba(204, 46, 120, 1) 100%);
+      linear-gradient(
+        90deg,
+        rgba(244, 147, 55, 1) 0%,
+        rgba(204, 46, 120, 1) 100%
+      );
     background-size: cover;
     background-position: top;
   }
 
   .como {
     padding: 2em 20%;
-}
+  }
 
-.como img {
+  .como img {
     width: 10%;
-}
+  }
 
-.team {
+  .team {
     text-align: center;
     padding: 2em 15%;
-}
+  }
 
-p {
+  p {
     padding-left: 20%;
     padding-right: 20%;
-}
+  }
 
-.bullets {
+  .bullets {
     padding: 2em 10%;
-}
+  }
 
   .chatbot {
     padding: 0 20%;
-}
+  }
 
-.modulos {
+  .modulos {
     margin-left: 20%;
     margin-right: 20%;
-}
+  }
 
   .rpaVideo {
     margin: 1em 20%;
-}
+  }
 
   .sectoresLogo {
     margin: 1em 20%;
-}
+  }
 
   .sectoresLogo div {
     width: calc(30% - 10px);
-}
+  }
 
   .introPages {
     padding: 3em 20%;
-    }
+  }
 
-    .itemRobot {
-        padding: 1em 20%;
-    }
+  .itemRobot {
+    padding: 1em 20%;
+  }
 
-    .robotVideo {
-        margin: 8em 20% 0 20%;
-    }
+  .robotVideo {
+    margin: 8em 20% 0 20%;
+  }
 
-    .slick-next {
-        right: 20%;
-    }
+  .slick-next {
+    right: 20%;
+  }
 
-    .slick-prev {
-        left: 20%;
-    }
+  .slick-prev {
+    left: 20%;
+  }
 
-    .call {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: first baseline;
-    }
+  .call {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: first baseline;
+  }
 
-    .conocer a {
-        width: 50%;
-    }
-
+  .conocer a {
+    width: 50%;
+  }
 }
 
 @media (min-width: 992px) {
+  .cards {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
 
-    .cards {
-        padding-left: 15%;
-        padding-right: 15%;
-    }
+  .rpaLogo img {
+    width: 20%;
+  }
 
-    .rpaLogo img {
-        width: 20%;
-    }
+  .conocer a {
+    width: 30%;
+  }
 
-    .conocer a {
-        width: 30%;
-    }
-
-    .chatbot img {
-        width: 35%;
-
-    }
-
-
+  .chatbot img {
+    width: 35%;
+  }
 }
 
 @media (min-width: 1200px) {
-    .chatbot .bullets {
-        width: 70%;
-    }
+  .chatbot .bullets {
+    width: 70%;
+  }
 
-    .chatbot img {
-        width: 25%;
-
-    }
-
+  .chatbot img {
+    width: 25%;
+  }
 }

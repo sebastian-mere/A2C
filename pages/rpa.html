@@ -33,10 +33,9 @@
     <div class="heroBanner heroPages heroRpa">
       <h1>RPA</h1>
       <p>Aumenta la eficiencia de tus procesos con <b>Robotic Process Automation</b></p>
-      <a href="#start">Conócelo</a>
     </div>
 
-    <div class="introPages introTexto" id="start">
+    <div class="introPages introTexto">
       <p><b>RPA</b> Es un servicio que a través de software se configura para replicar las acciones que un ser humano
         puede realizar en sistemas digitales.</p>
       <p>A través de él, podrás automatizar procesos manuales de gran tráfico, reducir los errores humanos y aumentar la
@@ -60,7 +59,6 @@
 
     <section class="comienza">
       <p>¡Comienza la evolución RPA de tu empresa <b>hoy mismo!</b></p>
-      <a href="mailto:info@any2cloud.com">CONTACTA A UN ASESOR</a>
     </section>
 
     <div class="rpaVideo">
@@ -105,7 +103,65 @@
 
     <section class="call asesor">
       <p>¿Automatizamos tu empresa?</p>
-      <a href="mailto:info@any2cloud.com">CONTACTA A UN ASESOR</a>
+    </section>
+
+    <section class="form centrado">
+      <form method="POST" action="procesar.php">
+        <div class="campo">
+          <div>
+            <input type="text" class="form-control" placeholder="Nombre y apellido" id="nombre" name="nombre">
+          </div>
+          <div class="warning" id="msgNombre"></div>
+        </div>
+        <div class="campo">
+          <div>
+            <input type="text" class="form-control" placeholder="Empresa" id="empresa" name="empresa">
+          </div>
+          <div class="warning" id="msgEmpresa"></div>
+        </div>
+        <div class="campo">
+          <div>
+            <input type="email" class="form-control" placeholder="Email" id="email" name="email">
+          </div>
+          <div class="warning" id="msgEmail"></div>
+        </div>
+        <div class="campo">
+          <div>
+            <input type="number" class="form-control" placeholder="Teléfono" id="telefono" name="telefono">
+          </div>
+          <div class="warning" id="msgTelefono"></div>
+        </div>
+        <div class="campo">
+          <div>
+            <input type="text" class="form-control" placeholder="País" id="pais" name="pais">
+          </div>
+          <div class="warning" id="msgPais"></div>
+        </div>
+        <div class="campo">
+          <div>
+            <div>
+              <select class="form-select" aria-label="Selección interés" id="interes" name="interes">
+                <option value="" selected>Interés en:</option>
+                <option value="buenos aires">Chatbot</option>
+                <option value="catamarca">RPA</option>
+                <option value="chaco">Robotics</option>
+              </select>
+            </div>
+            <div class="warning" id="msgInteres"></div>
+          </div>
+        </div>
+        <div class="campo">
+          <div>
+            <textarea class="form-control" id="comentarios" name="comentarios" rows="4" cols="50"
+              placeholder="Comentario"></textarea>
+          </div>
+          <div class="warning" id="msgComentarios"></div>
+        </div>
+        <div class="formBotones">
+          <button class="enviar" type="submit" id="simular">Enviar</button>
+          <button class="reset" type="reset" id="reiniciar">Reiniciar</button>
+        </div>
+      </form>
     </section>
 
     <section class="conocer">
@@ -138,10 +194,12 @@
     </div>
   </footer>
 
+  <button onclick="topFunction()" id="btn-subir" title="Subir"><i class="fa fa-arrow-up"></i></button>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-  <script src="../js/main.js"></script>
   <script src="../js/counter.js"></script>
+  <script src="../js/main.js"></script>
 
 </body>
 

@@ -5,123 +5,104 @@ hamburgerMenu.addEventListener("click", function () {
   nav.classList.toggle("open");
 });
 
-$(function() {
-  $('form').submit(function(e) {
-    e.preventDefault();
+// Obtener el formulario
+const form = document.querySelector("form");
 
-    var nombre = $('#nombre').val().trim();
-    var empresa = $('#empresa').val().trim();
-    var email = $('#email').val().trim();
-    var telefono = $('#telefono').val().trim();
-    var pais = $('#pais').val().trim();
-    var intereses = [];
-    $('input[name="interes[]"]:checked').each(function() {
-      intereses.push($(this).val());
-    });
-    var comentarios = $('#comentarios').val().trim();
-    var captcha = $('#captcha').val().trim();
+// Agregar el evento "submit" al formulario
+form.addEventListener("submit", (event) => {
+  // Obtener los valores de los campos
+  const nombre = document.getElementById("nombre").value;
+  const empresa = document.getElementById("empresa").value;
+  const email = document.getElementById("email").value;
+  const telefono = document.getElementById("telefono").value;
+  const pais = document.getElementById("pais").value;
+  const interes = document.getElementById("interes").value;
+  const comentarios = document.getElementById("comentarios").value;
 
-    var errors = [];
-    if (nombre == '') {
-      errors.push('El campo de Nombre y Apellido es obligatorio.');
-    }
-    if (empresa == '') {
-      errors.push('El campo de Empresa es obligatorio.');
-    }
-    if (email == '') {
-      errors.push('El campo de Email es obligatorio.');
-    } else if (!/^\S+@\S+\.\S+$/.test(email)) {
-      errors.push('El campo de Email no es válido.');
-    }
-    if (telefono == '') {
-      errors.push('El campo de Teléfono es obligatorio.');
-    } else if (!/^\d{10}$/.test(telefono)) {
-      errors.push('El campo de Teléfono no es válido. Debe ser un número de 10 dígitos sin espacios ni guiones.');
-    }
-    if (pais == '') {
-      errors.push('El campo de País es obligatorio.');
-    }
-    if (intereses.length == 0) {
-      errors.push('Debes seleccionar al menos un interés.');
-    }
-    if (captcha == '') {
-      errors.push('El campo de Captcha es obligatorio.');
-    } else if (captcha != '42') {
-      errors.push('El valor del campo Captcha no es correcto.');
-    }
+  // Validar el campo nombre
+  if (!nombre) {
+    event.preventDefault();
+    document.getElementById("msgNombre").textContent = "El nombre es requerido";
+  } else {
+    document.getElementById("msgNombre").textContent = "";
+  }
 
-    if (errors.length > 0) {
-      var message = '<ul>';
-      for (var i = 0; i < errors.length; i++) {
-        message += '<li>' + errors[i] + '</li>';
-      }
-      message += '</ul>';
-      Toastify({
-        text: message,
-        duration: 5000,
-        newWindow: true,
-        close: true,
-        gravity: "top",
-        position: "center",
-        backgroundColor: "#e74c3c",
-        stopOnFocus: true,
-      }).showToast();
-      return;
-    }
+  // Validar el campo empresa
+  if (!empresa) {
+    event.preventDefault();
+    document.getElementById("msgEmpresa").textContent =
+      "La empresa es requerida";
+  } else {
+    document.getElementById("msgEmpresa").textContent = "";
+  }
 
-    $.post('send_from.php', $('form').serialize(), function(data) {
-      Toastify({
-        text: "¡Gracias por completar el formulario!",
-        duration: 5000,
-        newWindow: true,
-        close: true,
-        gravity: "top",
-        position: "center",
-        backgroundColor: "#27ae60",
-        stopOnFocus: true,
-      }).showToast();
+  // Validar el campo email
+  if (!email) {
+    event.preventDefault();
+    document.getElementById("msgEmail").textContent = "El email es requerido";
+  } else if (!/\S+@\S+\.\S+/.test(email)) {
+    event.preventDefault();
+    document.getElementById("msgEmail").textContent = "Ingrese un email válido";
+  } else {
+    document.getElementById("msgEmail").textContent = "";
+  }
 
-      $('form')[0].reset();
-    });
-  });
+  // Validar el campo telefono
+  if (!telefono) {
+    event.preventDefault();
+    document.getElementById("msgTelefono").textContent =
+      "El teléfono es requerido";
+  } else if (isNaN(telefono)) {
+    event.preventDefault();
+    document.getElementById("msgTelefono").textContent =
+      "Ingrese un número de teléfono válido";
+  } else {
+    document.getElementById("msgTelefono").textContent = "";
+  }
+
+  // Validar el campo pais
+  if (!pais) {
+    event.preventDefault();
+    document.getElementById("msgPais").textContent = "El país es requerido";
+  } else {
+    document.getElementById("msgPais").textContent = "";
+  }
+
+  // Validar el campo interes
+  if (!interes) {
+    event.preventDefault();
+    document.getElementById("msgInteres").textContent =
+      "El interés es requerido";
+  } else {
+    document.getElementById("msgInteres").textContent = "";
+  }
+
+  // Validar el campo comentarios
+  if (!comentarios) {
+    event.preventDefault();
+    document.getElementById("msgComentarios").textContent =
+      "Los comentarios son requeridos";
+  } else {
+    document.getElementById("msgComentarios").textContent = "";
+  }
 });
 
-$(function () {
-  $("form").submit(function (e) {
-    e.preventDefault();
-    var form_data = $(this).serialize();
-    
-    $.ajax({
-      type: "POST",
-      url: "send_form.php",
-      data: form_data,
-      dataType: "json",
-      success: function (response) {
-        Toastify({
-          text: response.message,
-          duration: 3000,
-          newWindow: true,
-          close: true,
-          gravity: "top",
-          position: "center",
-          backgroundColor: "#27ae60",
-          stopOnFocus: true,
-        }).showToast();
-      },
-      
-      error: function (xhr, status, error) {
-        Toastify({
-          text: "Ha ocurrido un error al enviar el formulario. Por favor, inténtalo de nuevo más tarde.",
-          duration: 3000,
-          newWindow: true,
-          close: true,
-          gravity: "top",
-          position: "center",
-          backgroundColor: "#e74c3c",
-          stopOnFocus: true,
-        }).showToast();
-      },
-      
-    });
-  });
-});
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  var windowHeight = window.innerHeight;
+  var fullHeight = document.body.offsetHeight;
+  var scrolled = window.scrollY;
+  if (scrolled > (0.50 * (fullHeight - windowHeight))) {
+    document.getElementById("btn-subir").style.display = "block";
+    document.getElementById("btn-subir").classList.add("fade-in");
+  } else {
+    document.getElementById("btn-subir").style.display = "none";
+    document.getElementById("btn-subir").classList.remove("fade-in");
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}

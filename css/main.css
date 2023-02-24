@@ -221,6 +221,7 @@ video {
 .centrado {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .bullets {
@@ -394,6 +395,12 @@ video {
   padding: 2em 0 2em;
   width: 100%;
 }
+
+.sliderContainer img {
+  padding: 0 1em;
+  height: 70px;
+}
+
 .logoSlider {
   display: flex;
   justify-content: center;
@@ -1208,7 +1215,7 @@ footer {
   height: 50px;
   position: fixed;
   bottom: 20px;
-  right: 20px;
+  left: 20px;
   z-index: 99;
   border: 0;
   background-color: #c92e78;

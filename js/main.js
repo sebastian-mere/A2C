@@ -5,12 +5,10 @@ hamburgerMenu.addEventListener("click", function () {
   nav.classList.toggle("open");
 });
 
-// Obtener el formulario
+
 const form = document.querySelector("form");
 
-// Agregar el evento "submit" al formulario
 form.addEventListener("submit", (event) => {
-  // Obtener los valores de los campos
   const nombre = document.getElementById("nombre").value;
   const empresa = document.getElementById("empresa").value;
   const email = document.getElementById("email").value;

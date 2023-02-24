@@ -73,7 +73,7 @@
             un excelente anfitrión porque puede darle la bienvenida a los
             clientes y guiarlos a su mesa.
           </p>
-					<a href="#ketty">Ver más</a>
+          <a href="#ketty">Ver más</a>
         </div>
         <div class="itemRobot">
           <img src="../assets/img/Bellabot.png" alt="" />
@@ -89,7 +89,7 @@
             Cuenta con 4 amplias bandejas que permiten entregar a múltiples
             mesas. Su aspecto de gatita la hace fascinante a todos.
           </p>
-					<a href="#bella">Ver más</a>
+          <a href="#bella">Ver más</a>
         </div>
         <div class="itemRobot">
           <img src="../assets/img/cc1-bot.png" alt="" />
@@ -105,7 +105,7 @@
             un excelente anfitrión porque puede darle la bienvenida a los
             clientes y guiarlos a su mesa.
           </p>
-					<a href="#cc">Ver más</a>
+          <a href="#cc">Ver más</a>
         </div>
         <div class="itemRobot">
           <img src="../assets/img/flashbot.png" alt="" />
@@ -122,7 +122,7 @@
               edificios de oficinas.</b
             >
           </p>
-					<a href="#flash">Ver más</a>
+          <a href="#flash">Ver más</a>
         </div>
       </div>
 
@@ -133,28 +133,32 @@
           <video
             preload="metadata"
             src="../assets/img/video/KettyBot.mp4"
-            controls id="ketty"
+            controls
+            id="ketty"
           ></video>
         </div>
         <div class="video">
           <video
             preload="metadata"
             src="../assets/img/video/Bellabot.mp4"
-            controls id="bella"
+            controls
+            id="bella"
           ></video>
         </div>
         <div class="video">
           <video
             preload="metadata"
             src="../assets/img/video/CC1.mp4"
-            controls id="cc"
+            controls
+            id="cc"
           ></video>
         </div>
         <div class="video">
           <video
             preload="metadata"
             src="../assets/img/video/FlashBot.mp4"
-            controls id="flash"
+            controls
+            id="flash"
           ></video>
         </div>
       </div>
@@ -167,38 +171,73 @@
         <form method="POST" action="procesar.php">
           <div class="campo">
             <div>
-              <input type="text" class="form-control" placeholder="Nombre y apellido" id="nombre" name="nombre">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Nombre y apellido"
+                id="nombre"
+                name="nombre"
+              />
             </div>
             <div class="warning" id="msgNombre"></div>
           </div>
           <div class="campo">
             <div>
-              <input type="text" class="form-control" placeholder="Empresa" id="empresa" name="empresa">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Empresa"
+                id="empresa"
+                name="empresa"
+              />
             </div>
             <div class="warning" id="msgEmpresa"></div>
           </div>
           <div class="campo">
             <div>
-              <input type="email" class="form-control" placeholder="Email" id="email" name="email">
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Email"
+                id="email"
+                name="email"
+              />
             </div>
             <div class="warning" id="msgEmail"></div>
           </div>
           <div class="campo">
             <div>
-              <input type="number" class="form-control" placeholder="Teléfono" id="telefono" name="telefono">
+              <input
+                type="number"
+                class="form-control"
+                placeholder="Teléfono"
+                id="telefono"
+                name="telefono"
+              />
             </div>
             <div class="warning" id="msgTelefono"></div>
           </div>
           <div class="campo">
             <div>
-              <input type="text" class="form-control" placeholder="País" id="pais" name="pais">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="País"
+                id="pais"
+                name="pais"
+              />
             </div>
             <div class="warning" id="msgPais"></div>
           </div>
           <div class="campo">
             <div>
               <div>
-                <select class="form-select" aria-label="Selección interés" id="interes" name="interes">
+                <select
+                  class="form-select"
+                  aria-label="Selección interés"
+                  id="interes"
+                  name="interes"
+                >
                   <option value="" selected>Interés en:</option>
                   <option value="buenos aires">Chatbot</option>
                   <option value="catamarca">RPA</option>
@@ -210,8 +249,14 @@
           </div>
           <div class="campo">
             <div>
-              <textarea class="form-control" id="comentarios" name="comentarios" rows="4" cols="50"
-                placeholder="Comentario"></textarea>
+              <textarea
+                class="form-control"
+                id="comentarios"
+                name="comentarios"
+                rows="4"
+                cols="50"
+                placeholder="Comentario"
+              ></textarea>
             </div>
             <div class="warning" id="msgComentarios"></div>
           </div>
@@ -255,8 +300,21 @@
       </div>
     </footer>
 
-    <button onclick="topFunction()" id="btn-subir" title="Subir"><i class="fa fa-arrow-up"></i></button>
+    <button onclick="topFunction()" id="btn-subir" title="Subir">
+      <i class="fa fa-arrow-up"></i>
+    </button>
 
+    <!-- START Botmaker Webchat-->
+    <script>
+      (function () {
+        let js = document.createElement("script");
+        js.type = "text/javascript";
+        js.async = 1;
+        js.src = "https://go.botmaker.com/rest/webchat/p/I0AEDAP2QH/init.js";
+        document.body.appendChild(js);
+      })();
+    </script>
+    <!-- END Botmaker Webchat-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <script src="../js/slider.js"></script>

@@ -1,5 +1,5 @@
 $(".logoSlider").slick({
-  slidesToShow: 3,
+  slidesToShow: 1,
   slidesToScroll: 1,
   adaptiveHeight: false,
   variableWidth: true,
@@ -8,6 +8,7 @@ $(".logoSlider").slick({
   autoplaySpeed: 2000,
   mobileFirst: true,
   infinite: true,
+  centerMode: true,
   responsive: [
     {
       breakpoint: 1024,

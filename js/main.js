@@ -5,7 +5,6 @@ hamburgerMenu.addEventListener("click", function () {
   nav.classList.toggle("open");
 });
 
-
 const form = document.querySelector("form");
 
 form.addEventListener("submit", (event) => {
@@ -85,13 +84,15 @@ form.addEventListener("submit", (event) => {
   }
 });
 
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function () {
+  scrollFunction();
+};
 
 function scrollFunction() {
   var windowHeight = window.innerHeight;
   var fullHeight = document.body.offsetHeight;
   var scrolled = window.scrollY;
-  if (scrolled > (0.50 * (fullHeight - windowHeight))) {
+  if (scrolled > 0.5 * (fullHeight - windowHeight)) {
     document.getElementById("btn-subir").style.display = "block";
     document.getElementById("btn-subir").classList.add("fade-in");
   } else {

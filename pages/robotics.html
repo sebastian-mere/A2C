@@ -9,8 +9,7 @@
       name="description"
       content="El futuro comienza con nuestros robots de servicio. Proveemos un modelo de robots como servicio (RaaS por sus siglas en inglés ‘Robots as a Service’), el cual consiste en el arrendamiento de los robots según sea necesario."
     />
-    <title>Robotics – Any2cloud</title>
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
@@ -20,7 +19,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
     />
     <link rel="stylesheet" href="../css/main.css" />
-    <title>Any 2 Cloud - Chatbot</title>
+    <title>Robotics – Any2cloud</title>
     <script
       src="https://kit.fontawesome.com/7b28d5bc85.js"
       crossorigin="anonymous"
@@ -48,8 +47,8 @@
     </nav>
     <main>
       <div class="heroBanner heroPages heroRobotics">
-        <h1>ROBOTICS</h1>
-        <p>El futuro comienza con nuestros robots de servicio</p>
+        <h1 class="text-focus-in">ROBOTICS</h1>
+        <p class="text-focus-in">El futuro comienza con nuestros robots de servicio</p>
       </div>
 
       <div class="introPages introTexto">
@@ -60,12 +59,12 @@
         </p>
       </div>
 
-      <section class="robots">
+      <section data-aos="zoom-out-up" class="robots">
         <img src="../assets/img/ojo.svg" alt="Ojo" />
         <p>CONOCE A NUESTRO <b>TEAM DE ROBOTS</b></p>
       </section>
 
-      <div class="carrouselRobots">
+      <div data-aos="fade-right" class="carrouselRobots">
         <div class="itemRobot">
           <img src="../assets/img/kettybot.png" alt="KettyBot" />
           <h2>KETTYBOT</h2>
@@ -133,7 +132,7 @@
         </div>
       </div>
 
-      <div class="robotVideo">
+      <div data-aos="fade-up" class="robotVideo">
         <h3>NUESTROS ROBOTS EN ACCIÓN</h3>
 
         <div class="video">
@@ -301,7 +300,7 @@
         <p>¿Quieres sumarlos a tu equipo?</p>
       </section>
 
-      <section class="form centrado">
+      <section data-aos="flip-left" class="form centrado">
         <form method="POST" action="procesar.php">
           <div class="campo">
             <div>
@@ -449,9 +448,13 @@
       })();
     </script>
     <!-- END Botmaker Webchat-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <script src="../js/slider.js"></script>
     <script src="../js/main.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

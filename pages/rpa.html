@@ -18,6 +18,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/main.css" />
     <title>RPA – Any2cloud</title>
     <script
@@ -47,8 +48,8 @@
     </nav>
     <main>
       <div class="heroBanner heroPages heroRpa">
-        <h1>RPA</h1>
-        <p>
+        <h1 class="text-focus-in">RPA</h1>
+        <p class="text-focus-in">
           Aumenta la eficiencia de tus procesos con
           <b>Robotic Process Automation</b>
         </p>
@@ -85,7 +86,7 @@
         <p>¡Comienza la evolución RPA de tu empresa <b>hoy mismo!</b></p>
       </section>
 
-      <div class="rpaVideo">
+      <div data-aos="fade-up" class="rpaVideo">
         <div class="rpaLogo">
           <img src="../assets/img/logoRPA.svg" alt="Logo RPA" />
           <p>Vea la automatización robótica de procesos en acción!</p>
@@ -95,7 +96,7 @@
         </div>
       </div>
 
-      <div class="sectores">
+      <div data-aos="fade-right" class="sectores">
         <h3>SECTORES QUE IMPLEMENTAN RPA</h3>
         <div class="sectoresLogo">
           <div>
@@ -262,7 +263,7 @@
         <p>¿Automatizamos tu empresa?</p>
       </section>
 
-      <section class="form centrado">
+      <section data-aos="flip-left" class="form centrado">
         <form method="POST" action="procesar.php">
           <div class="campo">
             <div>
@@ -410,9 +411,13 @@
       })();
     </script>
     <!-- END Botmaker Webchat-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <script src="../js/slider.js"></script>
     <script src="../js/main.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

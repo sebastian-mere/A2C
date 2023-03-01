@@ -18,6 +18,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/main.css" />
     <title>Chatbot – Any2cloud</title>
     <script
@@ -47,8 +48,8 @@
     </nav>
     <main>
       <div class="heroBanner heroPages heroChatbot">
-        <h1>Chatbot</h1>
-        <p><b>Todo</b> en un sólo lugar</p>
+        <h1 class="text-focus-in">Chatbot</h1>
+        <p class="text-focus-in"><b>Todo</b> en un sólo lugar</p>
       </div>
 
       <div class="introPages">
@@ -60,7 +61,7 @@
         </p>
       </div>
 
-      <section class="atencion">
+      <section data-aos="zoom-out-up" class="atencion">
         <img src="../assets/img/globo.svg" alt="Globo de diálogo" />
         <div>
           <p>BRINDA UNA EXCELENTE ATENCIÓN AL CLIENTE, <b>SIN ESFUERZOS.</b></p>
@@ -85,7 +86,7 @@
           </div>
         </div>
 
-        <div class="skills">
+        <div data-aos="fade-up-left" class="skills">
           <img
             src="../assets/img/a2s-logo.png"
             alt="Desarrollado con Any2Suite"
@@ -314,7 +315,7 @@
         <p>¡AUTOMATICEMOS TU EMPRESA! 🚀</p>
       </section>
 
-      <section class="form centrado">
+      <section data-aos="flip-left" class="form centrado">
         <form method="POST" action="procesar.php">
           <div class="campo">
             <div>
@@ -462,9 +463,13 @@
       })();
     </script>
     <!-- END Botmaker Webchat-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <script src="../js/slider.js"></script>
     <script src="../js/main.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

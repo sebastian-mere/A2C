@@ -18,6 +18,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="../css/main.css" />
     <title>Nosotros – Any2cloud</title>
     <script
@@ -47,7 +48,7 @@
     </nav>
     <main>
       <div class="heroBanner heroAbout">
-        <h1>ABOUT US</h1>
+        <h1 class="text-focus-in">ABOUT US</h1>
       </div>
 
       <div class="introPages introAbout">
@@ -103,7 +104,10 @@
         <h2>LÍDERES</h2>
         <div class="lideres">
           <div class="humano">
-            <img src="../assets/img/team/henma.png" alt="Mario Henmanuel Vargas" />
+            <img
+              src="../assets/img/team/henma.png"
+              alt="Mario Henmanuel Vargas"
+            />
             <h3>Mario Henmanuel Vargas</h3>
             <p>Líder - Team Chatbot</p>
           </div>
@@ -118,7 +122,10 @@
             <p>Líder - Team Robotics</p>
           </div>
           <div class="humano">
-            <img src="../assets/img/team/mauricio.png" alt="Mauricio Pelecano" />
+            <img
+              src="../assets/img/team/mauricio.png"
+              alt="Mauricio Pelecano"
+            />
             <h3>Mauricio Pelecano</h3>
             <p>Líder de proyectos</p>
           </div>
@@ -168,49 +175,53 @@
           </div>
         </div>
       </div>
-
-      <footer>
-        <div class="footer">
-          <img
-            class="logoFooter"
-            src="../assets/img/a2c-footer-logo.png"
-            alt="Logo Any2Cloud"
-          />
-          <span></span>
-          <ul class="links">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="about.html">Nosotros</a></li>
-            <li><a href="chatbot.html">Chatbot</a></li>
-            <li><a href="rpa.html">RPA</a></li>
-            <li><a href="robotics.html">Robotics</a></li>
-          </ul>
-          <ul class="sm">
-            <li><i class="fa-brands fa-facebook"></i></li>
-            <li><i class="fa-brands fa-instagram"></i></li>
-            <li><i class="fa-brands fa-linkedin"></i></li>
-          </ul>
-        </div>
-      </footer>
-
-      <button onclick="topFunction()" id="btn-subir" title="Subir">
-        <i class="fa fa-arrow-up"></i>
-      </button>
-
-      <!-- START Botmaker Webchat-->
-      <script>
-        (function () {
-          let js = document.createElement("script");
-          js.type = "text/javascript";
-          js.async = 1;
-          js.src = "https://go.botmaker.com/rest/webchat/p/I0AEDAP2QH/init.js";
-          document.body.appendChild(js);
-        })();
-      </script>
-      <!-- END Botmaker Webchat-->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-      <script src="../js/slider.js"></script>
-      <script src="../js/main.js"></script>
     </main>
+
+    <footer>
+      <div class="footer">
+        <img
+          class="logoFooter"
+          src="../assets/img/a2c-footer-logo.png"
+          alt="Logo Any2Cloud"
+        />
+        <span></span>
+        <ul class="links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="about.html">Nosotros</a></li>
+          <li><a href="chatbot.html">Chatbot</a></li>
+          <li><a href="rpa.html">RPA</a></li>
+          <li><a href="robotics.html">Robotics</a></li>
+        </ul>
+        <ul class="sm">
+          <li><i class="fa-brands fa-facebook"></i></li>
+          <li><i class="fa-brands fa-instagram"></i></li>
+          <li><i class="fa-brands fa-linkedin"></i></li>
+        </ul>
+      </div>
+    </footer>
+
+    <button onclick="topFunction()" id="btn-subir" title="Subir">
+      <i class="fa fa-arrow-up"></i>
+    </button>
+
+    <!-- START Botmaker Webchat-->
+    <script>
+      (function () {
+        let js = document.createElement("script");
+        js.type = "text/javascript";
+        js.async = 1;
+        js.src = "https://go.botmaker.com/rest/webchat/p/I0AEDAP2QH/init.js";
+        document.body.appendChild(js);
+      })();
+    </script>
+    <!-- END Botmaker Webchat-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="../js/slider.js"></script>
+    <script src="../js/main.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

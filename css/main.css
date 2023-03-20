@@ -529,6 +529,23 @@ footer {
   padding-right: 0.5em;
 }
 
+.whatsapp {
+  padding: .5em 1.5em;
+  border: 3px solid #25D366;
+  border-radius: 50px;
+  font-size: 21px;
+  color: #25D366;
+}
+
+.whatsapp:hover {
+  color: #fff;
+}
+
+.whatsappBg {
+  padding-top: 2em;
+  background-color: #454343;
+}
+
 .introPages {
   padding: 3em 2em 3em 2em;
 }

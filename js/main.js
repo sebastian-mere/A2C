@@ -37,9 +37,9 @@ form.addEventListener("submit", (event) => {
   if (!email) {
     event.preventDefault();
     document.getElementById("msgEmail").textContent = "El email es requerido";
-  } else if (!/\S+@\S+\.\S+/.test(email)) {
+  } else if (!/^[^@\s]+@((?!gmail\.com|hotmail\.com|outlook\.com)[\w-]+\.)+[\w]{2,}$/.test(email)) {
     event.preventDefault();
-    document.getElementById("msgEmail").textContent = "Ingrese un email válido";
+    document.getElementById("msgEmail").textContent = "Ingrese un email válido con un dominio diferente a gmail.com, hotmail.com u outlook.com";
   } else {
     document.getElementById("msgEmail").textContent = "";
   }

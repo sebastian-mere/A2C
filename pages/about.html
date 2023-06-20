@@ -26,6 +26,20 @@
       src="https://kit.fontawesome.com/7b28d5bc85.js"
       crossorigin="anonymous"
     ></script>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-02GXZ3RZHZ"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-02GXZ3RZHZ");
+    </script>
   </head>
 
   <body>
@@ -105,14 +119,6 @@
         <div class="divider"></div>
         <h2>LÍDERES</h2>
         <div class="lideres">
-          <div class="humano">
-            <img
-              src="../assets/img/team/henma.png"
-              alt="Mario Henmanuel Vargas"
-            />
-            <h3>Mario Henmanuel Vargas</h3>
-            <p>Líder - Team Chatbot</p>
-          </div>
           <div class="humano">
             <img src="../assets/img/team/humbert.png" alt="Humberto Brenes" />
             <h3>Humberto Brenes</h3>
@@ -200,6 +206,11 @@
             <h3>Guillermo Ayala</h3>
             <p>Ingeniero en robótica</p>
           </div>
+          <div class="humano">
+            <img src="../assets/img/team/lucas.jpeg" alt="Genesis Morales" />
+            <h3>Lucas Teguindegui</h3>
+            <p>Analista de Certificación de Calidad</p>
+          </div>
         </div>
       </div>
 
@@ -215,7 +226,7 @@
           >Contactar a un asesor <i class="fa-brands fa-whatsapp"></i
         ></a>
       </div>
-      
+
       <section data-aos="flip-left" class="form centrado">
         <form method="POST" action="procesar.php">
           <div class="campo">
@@ -320,7 +331,7 @@
         <div class="conocerBotones">
           <a href="rpa.html">RPA</a>
           <a href="robotics.html">ROBOTICS</a>
-          <a href="about.html">NUESTRO EQUIPO</a>
+          <a href="chatbot.html">CHATBOT</a>
         </div>
       </section>
     </main>

@@ -257,12 +257,12 @@ video {
   align-items: center;
 }
 
-.puntoRPA img{
+.puntoRPA img {
   width: min-content;
   height: min-content;
 }
 
-.puntoRPA p{
+.puntoRPA p {
   padding: 1em;
 }
 
@@ -270,7 +270,7 @@ video {
   display: inline-block;
   height: 2px;
   width: 33%;
-  background: #D9D9D9;
+  background: #d9d9d9;
 }
 
 .divisorChat {
@@ -530,11 +530,11 @@ footer {
 }
 
 .whatsapp {
-  padding: .5em 1.5em;
-  border: 3px solid #25D366;
+  padding: 0.5em 1.5em;
+  border: 3px solid #25d366;
   border-radius: 50px;
   font-size: 21px;
-  color: #25D366;
+  color: #25d366;
 }
 
 .whatsapp:hover {
@@ -1200,7 +1200,7 @@ footer {
 .form .campo input,
 .form .campo select,
 .form .campo textarea {
-  padding:  0.5em 1em;
+  padding: 0.5em 1em;
   width: 100%;
   font-size: 16px;
   border-radius: 10px;
@@ -1497,7 +1497,7 @@ footer {
 }
 
 .text-focus-in {
-	animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
 
 @keyframes text-focus-in {

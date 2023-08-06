@@ -32,7 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($success) {
         # Set a 200 (okay) response code.
         http_response_code(200);
-        header("Location: #success");
+        header("Location: https://any2cloud.com/index.html#success");
         /*echo "Thank You! Your message has been sent.";*/
     } else {
         # Set a 500 (internal server error) response code.

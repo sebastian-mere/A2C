@@ -2,7 +2,7 @@
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     # FIX: Replace this email with recipient email
-    $mail_to = "Leads@any2cloud.com";
+    $mail_to = "smere@smart3d.tech";
 
     # Sender Data
     $name = str_replace(array("\r", "\n"), array(" ", " "), strip_tags(trim($_POST["nombre"])));
@@ -19,7 +19,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     # Mail Content
     $content = "Nombre: $name\n";
-    $content .= "Email: $email\n\n";
+    $content .= "Email: $email\n";
+    $content .= "Empresa: " . ($_POST["empresa"] ?? "") . "\n";
+    $content .= "Teléfono: " . ($_POST["telefono"] ?? "") . "\n";
+    $content .= "País: " . ($_POST["pais"] ?? "") . "\n";
+    $content .= "Interés en: " . ($_POST["interes"] ?? "") . "\n\n";
     $content .= "Mensaje:\n$message\n";
 
     # email headers.
@@ -46,4 +50,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     echo "There was a problem with your submission, please try again.";
 }
 ?>
-

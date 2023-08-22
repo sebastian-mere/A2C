@@ -2,7 +2,7 @@
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     # FIX: Replace this email with recipient email
-    $mail_to = "smere@smart3d.tech";
+    $mail_to = "Leads@any2cloud.com";
 
     # Sender Data
     $name = str_replace(array("\r", "\n"), array(" ", " "), strip_tags(trim($_POST["nombre"])));

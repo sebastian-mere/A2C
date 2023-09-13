@@ -103,7 +103,7 @@
       </div>
 
       <div class="team">
-        <h2>FOUNDERS</h2>
+        <h2>FUNDADORES</h2>
         <div class="gerentes">
           <div class="humano">
             <img src="../assets/img/team/sebas.png" alt="Sebastián Alfaro" />
@@ -120,8 +120,11 @@
         <h2>LÍDERES</h2>
         <div class="lideres">
           <div class="humano">
-            <img src="../assets/img/team/humbert.png" alt="Humberto Brenes" />
-            <h3>Humberto Brenes</h3>
+            <img
+              src="../assets/img/team/fabricio.png"
+              alt="Fabricio Llumiquinga"
+            />
+            <h3>Fabricio Llumiquinga</h3>
             <p>Líder - Team RPA</p>
           </div>
           <div class="humano">
@@ -187,20 +190,15 @@
             <p>Desarrollador de RPA</p>
           </div>
           <div class="humano">
-            <img
-              src="../assets/img/team/fabricio.png"
-              alt="Fabricio Llumiquinga"
-            />
-            <h3>Fabricio Llumiquinga</h3>
-            <p>Desarrollador de RPA</p>
-          </div>
-          <div class="humano">
             <img src="../assets/img/team/Marcos.png" alt="Marcos Berti" />
             <h3>Marcos Berti</h3>
             <p>Desarrollador de RPA</p>
           </div>
           <div class="humano">
-            <img src="../assets/img/team/marianela.jpg" alt="Marianela Yamila Almaraz" />
+            <img
+              src="../assets/img/team/marianela.jpg"
+              alt="Marianela Yamila Almaraz"
+            />
             <h3>Marianela Yamila Almaraz</h3>
             <p>Desarrollador de RPA</p>
           </div>
@@ -246,7 +244,10 @@
       </div>
 
       <section data-aos="flip-left" class="form centrado">
-        <form action="https://formsubmit.co/49601e53a608e4ed42fd9e2a262f4cb0" method="POST">
+        <form
+          action="https://formsubmit.co/49601e53a608e4ed42fd9e2a262f4cb0"
+          method="POST"
+        >
           <div class="campo">
             <div>
               <input
@@ -282,6 +283,19 @@
               />
             </div>
             <div class="warning" id="msgEmail"></div>
+          </div>
+          <div class="campo">
+            <div>
+              <input
+                type="number"
+                class="form-control"
+                placeholder="Código de país"
+                id="codigo_pais"
+                name="codigo_pais"
+                oninput="completePais(this)"
+              />
+            </div>
+            <div class="warning" id="msgCodPais"></div>
           </div>
           <div class="campo">
             <div>
@@ -341,9 +355,13 @@
           <div class="formBotones">
             <button class="enviar" type="submit" id="enviar">Enviar</button>
           </div>
-          <input type="hidden" name="_next" value="https://any2cloud.com/pages/about.html">
-          <input type="hidden" name="_capcha" value="false">
-          </form>
+          <input
+            type="hidden"
+            name="_next"
+            value="https://any2cloud.com/pages/about.html"
+          />
+          <input type="hidden" name="_capcha" value="false" />
+        </form>
       </section>
 
       <section class="conocer">

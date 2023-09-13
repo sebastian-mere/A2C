@@ -354,7 +354,10 @@
       </div>
 
       <section data-aos="flip-left" class="form centrado">
-        <form action="https://formsubmit.co/49601e53a608e4ed42fd9e2a262f4cb0" method="POST">
+        <form
+          action="https://formsubmit.co/49601e53a608e4ed42fd9e2a262f4cb0"
+          method="POST"
+        >
           <div class="campo">
             <div>
               <input
@@ -390,6 +393,19 @@
               />
             </div>
             <div class="warning" id="msgEmail"></div>
+          </div>
+          <div class="campo">
+            <div>
+              <input
+                type="number"
+                class="form-control"
+                placeholder="Código de país"
+                id="codigo_pais"
+                name="codigo_pais"
+                oninput="completePais(this)"
+              />
+            </div>
+            <div class="warning" id="msgCodPais"></div>
           </div>
           <div class="campo">
             <div>
@@ -449,8 +465,12 @@
           <div class="formBotones">
             <button class="enviar" type="submit" id="enviar">Enviar</button>
           </div>
-          <input type="hidden" name="_next" value="https://any2cloud.com/pages/chatbot.html">
-          <input type="hidden" name="_capcha" value="false">
+          <input
+            type="hidden"
+            name="_next"
+            value="https://any2cloud.com/pages/about.html"
+          />
+          <input type="hidden" name="_capcha" value="false" />
         </form>
       </section>
 

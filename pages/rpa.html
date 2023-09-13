@@ -307,8 +307,10 @@
       </div>
 
       <section data-aos="flip-left" class="form centrado">
-        <form action="https://formsubmit.co/49601e53a608e4ed42fd9e2a262f4cb0" method="POST">
-          
+        <form
+          action="https://formsubmit.co/49601e53a608e4ed42fd9e2a262f4cb0"
+          method="POST"
+        >
           <div class="campo">
             <div>
               <input
@@ -321,7 +323,6 @@
             </div>
             <div class="warning" id="msgNombre"></div>
           </div>
-
           <div class="campo">
             <div>
               <input
@@ -334,7 +335,6 @@
             </div>
             <div class="warning" id="msgEmpresa"></div>
           </div>
-
           <div class="campo">
             <div>
               <input
@@ -347,7 +347,19 @@
             </div>
             <div class="warning" id="msgEmail"></div>
           </div>
-
+          <div class="campo">
+            <div>
+              <input
+                type="number"
+                class="form-control"
+                placeholder="Código de país"
+                id="codigo_pais"
+                name="codigo_pais"
+                oninput="completePais(this)"
+              />
+            </div>
+            <div class="warning" id="msgCodPais"></div>
+          </div>
           <div class="campo">
             <div>
               <input
@@ -360,7 +372,6 @@
             </div>
             <div class="warning" id="msgTelefono"></div>
           </div>
-
           <div class="campo">
             <div>
               <input
@@ -373,7 +384,6 @@
             </div>
             <div class="warning" id="msgPais"></div>
           </div>
-
           <div class="campo">
             <div>
               <div>
@@ -392,7 +402,6 @@
               <div class="warning" id="msgInteres"></div>
             </div>
           </div>
-
           <div class="campo">
             <div>
               <textarea
@@ -409,7 +418,12 @@
           <div class="formBotones">
             <button class="enviar" type="submit" id="enviar">Enviar</button>
           </div>
-          <input type="hidden" name="_next" value="https://any2cloud.com/pages/rpa.html">
+          <input
+            type="hidden"
+            name="_next"
+            value="https://any2cloud.com/pages/about.html"
+          />
+          <input type="hidden" name="_capcha" value="false" />
         </form>
       </section>
 

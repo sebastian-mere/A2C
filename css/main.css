@@ -179,6 +179,7 @@ nav.open .menu {
   color: white;
   font-weight: 600;
   padding: 0;
+  padding-bottom: 10px;
 }
 
 .call a {
@@ -470,6 +471,12 @@ video {
 
 .final a {
   background: #f49337;
+
+  padding: 1em 2em;
+  border-radius: 2em;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 footer {
@@ -528,6 +535,35 @@ footer {
   font-size: 1.5em;
   padding-right: 0.5em;
 }
+
+.legales {
+  background: #454343;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0 3em 0;
+}
+
+.legales ul{
+  display: flex;
+  flex-wrap: wrap;
+  grid-area: links;
+  list-style: none;
+}
+
+.legales ul li {
+  color: white;
+  padding-right: 0.5em;
+}
+
+.legales ul li a {
+  font-size: 12px;
+  font-weight: lighter;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0 2em 0 0;
+}
+
 
 .whatsapp {
   padding: 0.5em 1.5em;
@@ -877,6 +913,7 @@ footer {
 }
 
 .asesor a {
+
   padding: 1em 2em;
   border-radius: 2em;
   font-size: 16px;
